@@ -88,7 +88,6 @@
     .hero__bkg-img {
         
     height:70vh;
-    -o-object-fit: cover;
     object-fit: cover;
     overflow: hidden;
         
@@ -101,7 +100,6 @@
     }
 
     .demo-circle {
-        -webkit-transform:translateY(40%);
         transform:translateY(40%);
     }
 
@@ -138,7 +136,6 @@
     position: relative;
     min-width:100%;
    height: auto;
-   -o-object-fit: cover;
    object-fit: cover;
    margin-top:0;
    padding-bottom:4rem;
@@ -185,11 +182,9 @@
 .before-after-box__triangle {
     height:2.5rem;
     width:5rem;
-    -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0%);
     clip-path: polygon(0 0, 50% 100%, 100% 0%);
     left:50%;
     top:-1px;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -215,7 +210,6 @@
    max-height:14rem;
    min-width:40rem;
     left:50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -248,7 +242,6 @@
 
 .section-support__point-bubble {
     left: 5rem;
-    -webkit-transform: rotate(-30deg) translateY(60%);
     transform: rotate(-30deg) translateY(60%)
 
 }
@@ -304,9 +297,7 @@
     .hero__bkg-img {
         
         height:70vh;
-        -o-object-fit: cover;
         object-fit: cover;
-        -o-object-position:55% 50%;
         object-position:55% 50%; 
         overflow: hidden;
 
@@ -352,7 +343,6 @@
 
         .section-support__point-bubble {
             left: .5rem;
-            -webkit-transform: rotate(-30deg) translateY(60%);
             transform: rotate(-30deg) translateY(60%)
         
         }
