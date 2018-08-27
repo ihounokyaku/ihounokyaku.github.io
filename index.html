@@ -8,6 +8,9 @@
 
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -25,8 +28,8 @@
 
 
                 <picture class="hero__img">
-                    <source class="hero__img" srcset="img/mainimg-mobile.png" media="(max-width: 750px)">
-                    <img class="hero__img" srcset="img/mainimg.jpg" alt="logofull">
+                    <source class="hero__img" srcset="img/mainimg-mobile.png" media="(max-width: 46.9em)">
+                    <img class="hero__img" srcset="img/mainimg.jpg" alt="mainfull">
                 </picture>
                 <!-- <img src="img/mainimg.jpg" alt="main_img" class="hero__img"> -->
                 <div class="hero__point-box">
@@ -47,7 +50,7 @@
                 </div>
 
             </div>
-            <div class="hero__top-line">
+            <div class="hero__top-line js--nav-break">
                 <img src="img/Logo.png" alt="logo" class="hero__logo">
                 <div class="hero__navigation">
                     <div class="navigation">
@@ -173,12 +176,41 @@
                     </div>
 
                 </div>
+                <div class="section-chat__expand">
+                        <div class="chat">
+                                <img src="img/AG.png" alt="ag" class="chat__photo">
+                                <div class="chat__content">
+                                    <p class="chat__text text-medium">まず、当時はなぜ転職しようと思ったんですか？
+                                        <br>弊社にご登録に来られた際、疲弊していたイメージはあります（笑）</p>
+                                </div>
+            
+                            </div>
+                            <div class="chat">
+                                <img src="img/対象者.png" alt="ag" class="chat__photo">
+                                <div class="chat__content">
+                                    <p class="chat__text text-medium">かなり心身ともに疲れてましたね。転職理由は今振り返ると3つあったと思います。
+                                        <br>①給与が業務の割に見合っていない。
+                                        <br>②社風が体育会系で、先輩が帰ってないと帰れない、よくある不条理な世界だったから。
+                                        <br>③将来的に経営が不安で。2ヶ月仕事がないときもありました。</p>
+                                </div>
+            
+                            </div>
+                            <div class="chat">
+                                <img src="img/AG.png" alt="ag" class="chat__photo">
+                                <div class="chat__content">
+                                    <p class="chat__text text-medium">なかなか大変でしたね。1つ1つ、状況を聞いてもいいですか？
+                                        <br>まず、①給与が業務の割に見合っていない。これはどういうことですか？また、転職して解決しましたか？</p>
+                                </div>
+            
+                            </div>
+                </div>
+                
             </div>
             <div class="section-chat__more-button-container">
-                <div class="section-chat__more-button">
-                    <button class="btn btn--round">
-                        <p class="btn--round__label btn--round__label-down">続きを読む</p>
-                        <svg class="btn--round__icon btn--round__icon-down">
+                <div class="section-chat__more-button" >
+                    <button class="btn btn--round" id="read-more">
+                        <p class="btn--round__label btn--round__label-down" id="read-more__text" >続きを読む</p>
+                        <svg class="btn--round__icon btn--round__icon-down" id="read-more__icon">
                             <use xlink:href="img/sprites.svg#icon-chevron-small-down"></use>
                         </svg>
                     </button>
@@ -347,13 +379,17 @@
             </div>
 
             <div class="carousel">
-                <div class="carousel__images">
-                    <img src="img/banner01.png" class="carousel__img carousel__img-1" alt="s">
-                    <img src="img/banner01.png" class="carousel__img carousel__img-2" alt="s">
-                    <img src="img/banner01.png" class="carousel__img carousel__img-3" alt="s">
-
+                <div class="slick-carousel">
+                    
+                    <div><img src="img/banner01.png" class="carousel__img carousel__img-2 carousel__red" alt="s"></div>
+                    <div><img src="img/banner01.png" class="carousel__img carousel__img-3 carousel__yellow" alt="s"></div>
+                    <div><img src="img/banner01.png" class="carousel__img carousel__img-1 carousel__green" alt="s"></div>
+                    <div><img src="img/banner01.png" class="carousel__img carousel__img-2 carousel__red" alt="s"></div>
+                    <div><img src="img/banner01.png" class="carousel__img carousel__img-3 carousel__yellow" alt="s"></div>
                 </div>
-                <div class="carousel__radio">
+
+                
+                <!-- <div class="carousel__radio">
                     <div class="radio-selector">
                         <div class="radio-selector__group">
                             <input type="radio" class="radio-selector__radio-input" id="radio-1" name="carousel">
@@ -378,7 +414,7 @@
 
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="section-creek-and-river">
@@ -527,7 +563,16 @@
         <p class="footer__copyright">© CREEK & RIVER Co.,Ltd. All Rights Reserved.</p>
     </footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
